@@ -4,8 +4,19 @@
     --white: #ffffff;
 }
 
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
 .header {
 }
+
 .header__container {
 
 }
@@ -16,6 +27,9 @@
 
 }
 .header1 {
+    font-family: Oswald;
+    font-weight: medium;
+    font-size: 64px;
     color: var(--white);
     
 }
