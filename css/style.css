@@ -14,22 +14,17 @@
     src: url(../fonts/Oswald-VariableFont_wght.ttf);
 }
 
-.header {
-}
+.header {}
 
-.header__container {
+.header__title {}
 
-}
-.header__logo {
+.header__menu {}
 
-}
-.header__menu {
+.header__menu_line {}
 
-}
 .header1 {
     font-family: Oswald;
-    font-weight: medium;
+    font-weight: 500;
     font-size: 64px;
     color: var(--white);
-    
 }
