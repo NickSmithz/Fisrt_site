@@ -1,0 +1,21 @@
+:root {
+    --accent: #F7654A;
+    --dark: #404149;
+    --white: #ffffff;
+}
+
+.header {
+}
+.header__container {
+
+}
+.header__logo {
+
+}
+.header__menu {
+
+}
+.header1 {
+    color: var(--white);
+    
+}
