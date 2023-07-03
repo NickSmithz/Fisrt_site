@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: inherit;
 }
 
@@ -16,8 +18,60 @@ body {
     --accent: #F7654A;
     --dark: #404149;
     --white: #ffffff;
+    --gray: #999999;
+    --bg-color: #f7f7f7;
 }
 
+/* Стили для текста */
+
+h1 {
+    color: var(--white);
+    text-align: center;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 95px;
+    max-width: 734px;
+    margin: 0 auto 17px;
+}
+
+.text-h2 {
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.text-h3 {
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+.text-h4 {
+    font-size: 21px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.text-p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.text-p-reviews {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+/*  */
 @font-face {
     font-family: 'OpenSans';
     src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
@@ -28,23 +82,64 @@ body {
     src: url(../fonts/Oswald-VariableFont_wght.ttf);
 }
 
-.header {}
-
 .container {
     max-width: 1110px;
-    background: #ddd;
     margin: 0 auto;
-    
+
 }
 
-.header__title {}
+.header {
+    min-height: 740px;
+    background-image: url(../img/rectangle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.header__burger {}
+.logo {
+    width: 60px;
+    height: 60px;
+}
 
-.header__burger_line {}
+.header__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+    margin-bottom: 112px;
+}
 
-.header1 {
-    font-family: Oswald;
-    font-size: 64px;
+.header__burger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--accent);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__burger_line {
+    display: block;
+    width: 21px;
+    height: 3px;
+    background-color: var(--white);
+    margin-bottom: 4px;
+}
+
+.header__burger_line:last-child {
+    margin-bottom: 0px;
+}
+
+.h4 {
     color: var(--white);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    max-width: 734px;
 }
