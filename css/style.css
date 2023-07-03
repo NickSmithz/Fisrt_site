@@ -1,3 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
 :root {
     --accent: #F7654A;
     --dark: #404149;
@@ -16,15 +30,21 @@
 
 .header {}
 
+.container {
+    max-width: 1110px;
+    background: #ddd;
+    margin: 0 auto;
+    
+}
+
 .header__title {}
 
-.header__menu {}
+.header__burger {}
 
-.header__menu_line {}
+.header__burger_line {}
 
 .header1 {
     font-family: Oswald;
-    font-weight: 500;
     font-size: 64px;
     color: var(--white);
 }
