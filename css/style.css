@@ -157,7 +157,7 @@ h1 {
 .about {
     padding-top: 250px;
     position: relative;
-    height: 1080px;
+    min-height: 1080px;
 }
 
 .info {
@@ -246,19 +246,66 @@ h1 {
 }
 
 
+.request {
+    background-color: var(--accent);
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+.request__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.request-h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white, #FFF);
+    margin-bottom: 7px;
+    letter-spacing: 0.02em;
+}
+.request-h4 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white, #FFF);
+    letter-spacing: 0.02em;
+}
+.request__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 14px 30px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: var(--white);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.request__icon {
+    margin-right: 15px;
+}
+
+
 
 @media screen and (max-width: 1280px) { 
     .header {
         padding: 10px 50px;
     }
-
-
     .about__grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
     .about__projects {
         padding: 110px 15px;
+    }
+    .request {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -290,5 +337,8 @@ h1 {
     .about__grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
+    }
+    .request__flex {
+        flex-wrap: wrap;
     }
 }
