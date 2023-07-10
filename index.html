@@ -4,20 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
+
+    <ul id="slide-out" class="sidenav">
+      <li><a href="#!"><i class="material-icons">label</i>Главная</a></li>
+      <li><a href="#!"><i class="material-icons">label</i>О нас</a></li>
+      <li><a href="#!"><i class="material-icons">label</i>Услуги</a></li>
+      <li><a href="#!"><i class="material-icons">label</i>Контакты</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть</a></li>
+    </ul>
+
     <header class="header">
         <div class="container">
             <div class="header__title">
                 <img src="/img/logo.svg" alt="" class="logo">
-                <button class="header__burger">
+                <a data-target="slide-out" class="header__burger sidenav-trigger">
                     <span class="header__burger_line"></span>
                     <span class="header__burger_line"></span>
                     <span class="header__burger_line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="h1">РЕАЛИЗУЕМ КРУПНЕЙШИЕ
                 ПРОЕКТЫ В РОССИИ</h1>
@@ -279,6 +290,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
